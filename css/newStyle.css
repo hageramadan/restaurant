@@ -1,0 +1,665 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Milonga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Milonga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Lobster&family=Milonga&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&family=Playball&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&family=Playball&family=Rufina&display=swap');
+/*
+  font-family: 'Courgette', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Original Surfer', cursive;
+    font-family: 'Playball', cursive;
+*/
+body{
+    padding-top: 50px;
+    font-family: 'Rufina', serif;
+    
+   
+}
+/********************start overridding bootstrap********************/
+/*****************Option box****************/
+.option-box{
+    position: fixed;
+    top: 100px;
+    left: 0;
+    z-index:9999;
+}
+.gear-ckeck{
+    cursor: pointer;
+    padding:5px;
+    
+}
+.option-box .color-option{
+    float: left;
+    background-color: #333;
+    color: #fff;
+    padding: 3px 5px;
+    width: 180px;
+    display: none;
+}
+.option-box h3{
+    padding-bottom: 5px;
+}
+.option-box .color-option ul li{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 3px;
+}
+
+
+/*main navbar*/
+.navbar{
+    min-height: 60px;
+    font-family: 'Courgette', cursive;
+    font-family: 'Original Surfer', cursive;
+    
+}
+
+.navbar-brand {
+    font-size: 35px;
+    line-height: 35px;
+    font-family: 'Lobster', cursive;
+    font-family: 'Milonga', cursive;
+    letter-spacing: .02px;
+    
+}
+.navbar-toggle {
+    
+    margin-top: 15px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+        color: #9d9d9d;
+        font-size: 20px;
+        animation-name: scale;
+    animation-duration: 2s;
+    animation-delay: 0s;
+}
+.navbar-inverse .navbar-brand {
+    color: #DDD;
+    }
+.bord:hover{
+  border:2px solid blue;
+}
+ 
+    .navbar-nav>li>.dropdown-menu {
+        background-color: #222;
+       
+    }
+  .navbar-inverse .dropdown-menu{
+        left: 0;
+        right: auto;
+    }
+.dropdown-menu{    
+  min-width: 150px;       
+}
+.dropdown-menu>li>a{
+        color: #fff;
+        padding: 6px 20px;
+        transition: padding .3s linear;
+        font-size: 16px;
+}
+.dropdown-menu>li>a:hover{
+        color:#FFF;  
+        padding-left: 30px;
+}
+   
+.navbar-nav>li>a {
+        padding-top: 22px;
+        padding-bottom: 22px;
+}
+    /*********slider*********/
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .thumbnail a>img, .thumbnail>img{
+        max-height: 780px;
+        min-width: 100%;
+}
+.carousel-inner {      
+      max-height: 700px;
+}
+
+.carousel-caption {
+        position: absolute;
+        right: 15%;
+        bottom: 90px;
+}
+
+  /*********About***********/
+.about{
+      padding-top: 60px;
+      padding-bottom: 60px;
+}
+.about h1,h2{
+     font-weight: bold;
+}
+.about .lead{
+      font-size: 25px;
+      margin-top:15px;
+      color: #888;
+     animation-name: scale;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    position: relative;
+}
+/*********features**********/
+.features{
+    background-color: #EEE;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.features h1{
+    position: relative;
+    margin-bottom: 40px;
+    color: #555;
+    
+}
+.features .glyphicon{
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 50%;
+    padding:10px;
+    background-color: #eee;
+}
+
+.features .glyphicon:hover{
+    color: #FFF;
+}
+
+.features .feat{
+    position: relative;
+    padding-bottom: 20px;
+   animation-name: scale;
+    animation-duration: 2.5s;
+    animation-delay: 0s;
+    transition:all 1s linear;
+    overflow: hidden;
+
+}
+.features .feat p{
+    color: #666;
+}
+
+@keyframes move-down {
+   0%{
+       left: -1200px;
+       
+   }
+   100%{
+       left: 0px;
+      
+   }
+}
+@keyframes scale {
+    0%{
+      
+        transform: scale(.2,.2);
+    }
+    100%{
+      
+        transform: scale(1,1);
+    }
+ }
+/*******Testimonial*******/
+.testimonial{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: 'Playball', cursive;
+    
+}
+.testimonial h2{
+    font-weight: small;
+    margin-bottom: 20px;
+    font-family: 'Rufina', serif;
+}
+ 
+.testimonial .lead{
+font-size: 28px;
+color: #555;
+margin-bottom: 10px;
+line-height: 1.2em;
+}
+ 
+.testimonial .item span{
+    font-size: 24px;
+    font-weight: bold;
+}
+.testimonial .carousel-inner{
+    min-height: 110px;
+}
+
+.testimonial .carousel-indicators{
+    position: static;
+    width: 100%;
+    margin-left: auto;
+    padding-top: 15px;
+}
+
+.testimonial .carousel-indicators li{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+   margin-top: 20px;
+    text-indent: 0;
+    margin-right: 20px;
+    opacity: 0.4;
+    margin-bottom: 20px;
+
+    overflow: hidden;
+    transition: all .5s linear;
+
+}
+.testimonial .carousel-indicators li.active{
+    opacity: 1;
+    box-shadow: 3px 3px 20px #2da6df;
+    border: 0;
+}
+.carousel-indicators img{
+    width: 100px;
+    height: 100px;
+    
+}
+/******************start Table Price*******************/
+
+.price{
+    background-color: #EEE;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-image: url('newImg/background/back (28).jpg');
+   
+}
+.price h2{
+    margin-bottom: 30px;
+}
+.price .price_box{
+    background-color: #FFF;
+    border:1px solid #DDD;
+    padding: 10px;
+   
+    margin-bottom: 20px;
+    transition: all .5s ease;
+    cursor: pointer;
+    border-radius: 20px;
+    position: relative;
+    animation-name: move-down;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    overflow: hidden;
+}
+
+.price .price_box:hover p{
+    transform: scale(1.1,1.1)  rotate(360deg);
+    border:2px solid #d3d3d3;
+
+}
+.price .price_box:hover .btn{
+    transform: scale(1.19,1.19) ;
+}
+.price .price_box h3{
+    font-size: 28px;
+    font-weight: bold;
+}
+.price .price_box p{
+    font-size: 28px;
+    background: #f3f3f3;
+    font-family: 'Lobster', cursive;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    line-height: 100px;
+    transition-duration: 0.8s;
+    border:2px solid #FFF;
+    
+}
+
+.price .price_box ul{
+    line-height: 220%;
+    font-size: 18px;
+    font-family: 'Original Surfer', cursive;
+    text-transform: capitalize;
+}
+.price .price_box .btn{
+   transition-duration: 0.7s;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+/*************our team************/
+.our_team{
+    background: url("../my_Images/team/wavegrower.gif") no-repeat center center fixed;
+    background-size:cover ;
+    width: 100%;
+    min-height: 600px;  
+}
+.our_team h2{
+    margin-bottom: 60px;
+}
+.our_team .team{
+    background: rgba(2, 2, 2, 0.8);
+    color: #FFF;
+    min-height: 600px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.our_team .person{
+    margin-bottom: 40px;
+}
+
+/***************Subscribe***************/
+.subscribe{
+    padding-top: 40px;
+    padding-bottom: 80px;
+    background: #EEE;
+}
+.subscribe h2{
+    color: #888;
+    letter-spacing: 1.7px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+
+.subscribe p{
+    padding-bottom: 20px;
+    
+}
+.subscribe .form-control{
+    margin-right: -5px;
+    width: 400px;
+    border-radius: 0;
+}
+.subscribe button{
+    border-radius: 0;
+}
+
+
+/**********statistic*******/
+.statistic{
+    background: url('../my_Images/statisctic/back.jpg') no-repeat center center fixed;
+    min-height: 300px;
+}
+.statistic .data{
+    background: rgba(2, 2, 2, 0.85);
+    color: #bbbbbb;
+    min-height: 300px;
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+
+.statistic .data h2{
+    margin-bottom: 60px;
+} 
+.statistic .stats{
+    margin-bottom: 40px;
+    transition-duration:0.7s ;
+}
+.statistic .stats:hover{
+    color: #FFF;
+}
+.statistic .stats p{
+  font-size: 50px;
+  font-family: 'Lobster', cursive;
+  margin-bottom: 0;
+
+}
+
+.statistic .stats span{
+    font-size: 18px;
+}
+/***************** Our Skills*******************/
+.our-skills{
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+ 
+.our-skills h2{
+    margin-bottom: 60px;
+    color: black;
+}
+
+.our-skills h3{
+    font-weight: bold;
+    color: black;
+    margin-top: 0;
+    
+}
+
+.skills-info{
+    margin-bottom: 20px;
+}
+.skills-progress .progress{
+    height: 36px;
+   
+}
+
+.skills-progress .progress-bar{
+   line-height: 36px;
+   font-size: 18px;
+   text-align: left;
+   text-indent: 10px;
+}
+
+
+
+/**********contact us**********/
+.contact-us{
+   background: url("../my_Images/team/contact\ us.jpg") no-repeat fixed;
+   background-size: cover;
+   background-position-y: bottom;
+   background-position-x: center;
+   min-height: 400px;
+   
+   
+}
+
+.contact-us .contact{
+    background:rgba(8, 8, 8, 0.8);
+    color: #EEE;
+    min-height: 400px;
+    padding-top: 40px;
+   padding-bottom: 40px;
+
+}
+
+.contact-us p{
+    margin-bottom: 40px;
+}
+.contact-us input[type="text"],
+textarea{
+    background: rgba(82, 78, 78, 0.7);
+    color: #FFF;
+    border: none;
+}
+.contact-us textarea{
+    height: 108px;
+    background: rgba(82, 78, 78, 0.7);
+    color: #FFF;
+    border: none;
+}
+
+/**********Our Clients************/
+
+.our-client{
+    background: #EEE;
+    padding-top: 10px;
+
+}
+.our-client img{
+    opacity: 0.4;
+   margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.our-client img:hover{
+   opacity: 1;
+}
+
+
+/******************footer***************/
+
+.footer{
+    background:#333;
+    color: #AAA;
+    padding-top: 20px;
+   padding-bottom: 20px;
+}
+.footer a{color: #AAA;}
+
+.footer a:hover{color: #FFF;}
+.footer h3{
+   
+    margin: 30px 0 20px;
+}
+
+.footer .fa-lg {
+    font-size: 2.93333em ;
+    padding: 5px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+
+    cursor: pointer;
+    
+    color: #DDD;
+       
+    
+}
+.footer .fa-lg:hover{
+    color: #fff;
+  
+   
+}
+
+.footer  .media h4{
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+.footer h3  {
+    font-weight: bold;
+}
+
+.footer .img-thumbnail{
+    background:rgba(0,0,0,.1);
+    border:1px solid #555;
+    
+}
+
+.footer .col-lg-4{
+    margin-bottom: 30px;
+}
+
+ .copyright{
+    background: #222;
+    padding: 20px 0;
+    color: #AAA;
+    font-size: 20px;
+}
+
+
+
+
+
+/************Media Query*************/
+@media (max-width:767px)/*extra small screen(xs)*/
+{
+    .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+        margin-right: 30px}
+    .carousel-caption {
+        
+        bottom: 5px;
+    }
+    .navbar-inverse .navbar-nav >li >a{
+        padding-top: 10px;
+        padding-bottom:10px
+    }
+    .subscribe .form-control {
+        
+        margin:20px auto;
+        margin-bottom: 0;
+        width: 400px;
+        
+    }
+    .subscribe .btn{
+        width: 400px;
+    }
+
+    .option-box .color-option{
+     
+        width: 150px;
+       
+    }
+    .option-box .color-option ul li{
+        width: 30px;
+        height: 30px;
+       
+    }
+    .option-box h3{
+        font-size: 20px;
+    }
+    .option-box{
+       
+        top: 70px;}
+}
+@media (min-width:768px)and (max-width:991px)/*small screen(sm)*/
+{
+    .option-box{
+       
+        top: 120px;}
+
+        .option-box .color-option{
+     
+            width: 150px;
+           
+        }
+        .option-box .color-option ul li{
+            width: 30px;
+            height: 30px;
+           
+        }
+        .option-box h3{
+            font-size: 20px;
+        }
+}
+@media (min-width:992px) and (max-width:1199px)/*mediem screen(md)*/
+{
+
+}
+@media (min-width:1200px)/*large screen(lg)*/
+{
+
+}
+
+
+/*****Scroll up********/
+
+#scroll-top{
+    position: fixed;
+    right: 15px;
+    bottom: 10px;
+   z-index: 9999;
+   display: none;
+   cursor: pointer;
+
+}
+
+
+
+
+
+
+
+
+/*********hover*********/
+
+
+
+
+
+
+
+
+
